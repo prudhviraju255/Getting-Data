@@ -1,0 +1,19 @@
+.left-nav li{
+    list-style-type:none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+.left-nav ul{
+    padding-left:0px;
+}
+.left-nav li a{
+    color:#0166b0;
+    text-decoration:none;
+    /* font-weight:bold; */
+    font-size: 0.9em!important;
+    font-weight: bold;
+    display:block;
+}
+.left-nav li a:hover{
+ color:orange;
+}

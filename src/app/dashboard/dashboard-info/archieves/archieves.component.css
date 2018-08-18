@@ -1,0 +1,7 @@
+.pad-top{
+  padding-top:40px;
+}
+/* You can add global styles to this file, and also import other style files */
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #80aeda;
+}

@@ -1,0 +1,147 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <!-- <a class="navbar-brand" href="#">
+    <img src="assets/images/logo.gif" alt="logo" style="width:40px;">
+  </a> -->
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+</nav>
+<div class="container-fluid" style="background:#eaeef0;">
+  <div class="row">
+    <div class="col-md-2"  style="background:#fff;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)">
+      <div class="left-nav">
+          <b>Admin Tools</b>
+      <ul>
+        <li>
+           
+            <a routerLink="/dashboard-info/manage-contact-us"> Manage contact us  </a> 
+        </li>
+        <li>
+            <a routerLink="/dashboard-info/manage-faq"> Manage FAQ  </a> 
+        </li>
+      </ul>
+      <b>Users</b>
+      <ul>
+        <li>
+            <a routerLink="/dashboard-info/manage-users"> Manage users </a>
+        </li>
+      <li>
+          <a routerLink="/dashboard-info/manage-editors"> Manage Editors</a>
+      </li>
+      <li>
+          <a routerLink="/dashboard-info/"> Manage inactive users</a>
+      </li>
+        <li>
+            <a routerLink="/dashboard-info/"> Manage blocked users</a>
+        </li>  
+         </ul> 
+         <b> Manage Newsletter</b>
+         <ul>
+            <li>
+                <a routerLink="/dashboard-info/compose"> Compose </a>
+            </li>
+          <li>
+              <a routerLink="/dashboard-info/archieves"> Archieves </a>
+          </li>
+          
+             </ul> 
+         <b>
+Articles
+         </b>
+         <ul>
+           <li>
+              <a routerLink="/dashboard-info/manage-contact-us">  Submitted </a>
+           </li>
+            <li>
+                <a routerLink="/dashboard-info/manage-contact-us"> Reviewed</a>
+            </li>
+            <li>
+                <a routerLink="/dashboard-info/manage-contact-us">  Published</a>
+            </li>
+            <li>
+                <a routerLink="/dashboard-info/manage-contact-us"> Unpulished</a>
+            </li>
+                 <li>
+                    <a routerLink="/dashboard-info/manage-contact-us">  Partially submitted</a>
+
+                 </li> 
+                   <li>
+                      <a routerLink="/dashboard-info/manage-contact-us">Rejected </a>
+                   </li>
+                     <li>
+                        <a routerLink="/dashboard-info/manage-contact-us"> Modification requested</a>
+                     </li> 
+                        <li>
+                            <a routerLink="/dashboard-info/manage-contact-us"> Flagged articles</a>
+                        </li>
+                         
+         </ul>
+
+      </div>
+      
+
+    </div>
+    <div class="col-md-10" >
+       
+      <!-- <div class="o-head">
+          <h1>Welcome to  <img src="assets/images/Logog.jpg"> Admin Panel</h1>
+      </div>
+       -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="">
+            <app-dashboard-info *ngIf="urlPath==='/dashboard-info'">
+               
+            </app-dashboard-info>
+            <app-manage-contact-us *ngIf="urlPath==='/dashboard-info/manage-contact-us'">
+
+            </app-manage-contact-us>
+            <app-manage-faq *ngIf="urlPath==='/dashboard-info/manage-faq'">
+
+            </app-manage-faq>
+            <app-add-new-faq *ngIf="urlPath==='/dashboard-info/manage-faq/add-new-faq'">
+
+            </app-add-new-faq> 
+            <app-compose *ngIf="urlPath==='/dashboard-info/compose'">
+
+            </app-compose> 
+            <app-archieves *ngIf="urlPath==='/dashboard-info/archieves'">
+
+            </app-archieves> 
+            <app-manage-users *ngIf="urlPath==='/dashboard-info/manage-users'">
+
+            </app-manage-users>
+        </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

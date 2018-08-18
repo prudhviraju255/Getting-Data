@@ -1,0 +1,23 @@
+.webmed_wrapper{
+  /* background:url('/assets/images/webmed.png');
+  background-size:cover;
+  height:100vh; */
+  background:#fff;
+}
+.signin_wrapper{
+  width: 350px;
+    margin: auto;
+    -webkit-transform: translate(0px,130px);
+    transform: translate(0px,130px);
+}
+.signin_box img{
+  width:250px;
+  height: 110px;
+  margin-left:40px;
+  margin-bottom:5px;
+}
+.btn-green{
+  /* background:#a4c639; */
+  background: #2091D0;
+  color:#fff;
+  }
